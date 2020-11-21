@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+<link id="code-theme" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.css">
+</head>
+
+<script>
+    function changeTheme(sel) {
+        if (sel.value == "tomorrownight") {
+            $("link[id=code-theme]").attr({href : "https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.css"});
+        }
+        if (sel.value == "github") {
+            $("link[id=code-theme]").attr({href : "https://jmblog.github.io/color-themes-for-google-code-prettify/themes/github.css"});
+        }
+        if (sel.value == "atelier") {
+            $("link[id=code-theme]").attr({href : "https://jmblog.github.io/color-themes-for-google-code-prettify/themes/atelier-cave-light.css"});
+        }
+        if (sel.value == "tomorrow") {
+            $("link[id=code-theme]").attr({href : "https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow.css"});
+        }
+        
+    }
+</script>
+
+<label for="themes">Choose a Theme:</label>
+
+<select name="themes" id="cars" onchange="changeTheme(this);">
+  <option value="tomorrownight">Tomorrow-night</option>
+  <option value="github">GitHub</option>
+  <option value="atelier">Atelier-Cave-Light</option>
+  <option value="tomorrow">Tomorrow</option>
+</select>
+
+<pre class="prettyprint">
+int method2(int[ ] a, int x, int y) { // this method returns integer
+    if (x >= y) {
+        return a[x];
+    }
+    else {
+        int z = (x + y) / 2;
+        return smaller(method2(a, x, z), method2(a, z+1, y));
+    }
+}
+</pre>
+
+<pre class="prettyprint">
+public class Method5 {
+    public static int method5(int a, int n) {
+        if (n < 1) {
+            return 1;
+        }
+        else {
+            int x = n;
+            while (x >= 1) {
+                a = a + a;
+                x = x - 1;
+            }
+            return a + method5(a, n-1);
+        }
+    }
+}
+</pre>
+</html>
