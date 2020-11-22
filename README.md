@@ -4,5 +4,5 @@ Do you have content where you're showing code to an audience? Do you often times
 
 I decided to create some basic HTML with JavaScript and jQuery to demonstrate the ability to alter in real time the layout of your code presentation layer using Google Prettify JavaScript Library
 
-## Example
+## Preview
 ![Example of Codify Prettify](https://github.com/mentatpsi/CodeViewerHTML/blob/main/example_codeprettify.png)
